@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Text from './components/text/text'
+import Button from './components/button/button'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <Text textColor='green'>
+        <h2>Conteúdo</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac turpis turpis. Vivamus ac scelerisque nibh, ut fermentum nisi. Quisque eu dui augue.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </Text>
+
+      <Text textColor='blue'>
+        <p>
+          lorem
+        </p>
+      </Text>
+
+      <Text>
+        <p>
+          Lorem
+        </p>
+      </Text>
+
+      <Button/>
+
+      <Button label='Download'/>
+
+      <Button label='Baixar CV'/>
+    </>
   );
 }
 
